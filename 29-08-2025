@@ -1,0 +1,8 @@
+Link: https://leetcode.com/problems/alice-and-bob-playing-flower-game/description/?envType=daily-question&envId=2025-08-29
+
+class Solution {
+public:
+    long long flowerGame(int n, int m) {
+        return 1LL * n * m / 2;
+    }
+};
