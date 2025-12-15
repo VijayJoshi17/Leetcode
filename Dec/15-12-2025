@@ -1,0 +1,14 @@
+Link: https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/description/?envType=daily-question&envId=2025-12-15
+
+class Solution {
+public:
+    long long getDescentPeriods(vector<int>& prices) {
+        int n = prices.size();
+        long long sum = 1,des=1;
+        for(int i=1;i<n;i++){
+            des = (prices[i]+ 1 == prices[i-1])*des + 1;
+            sum+=des;
+        }
+        return sum;
+    }
+};
