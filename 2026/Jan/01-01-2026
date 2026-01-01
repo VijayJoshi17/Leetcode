@@ -1,0 +1,5 @@
+Link: https://leetcode.com/problems/plus-one/description/?envType=daily-question&envId=2026-01-01
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        return list(map(int,str(int(''.join(map(str,digits))) + 1)))
