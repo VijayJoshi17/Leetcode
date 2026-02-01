@@ -1,0 +1,11 @@
+Link: https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/description/?envType=daily-question&envId=2026-02-01
+
+class Solution {
+public:
+    int minimumCost(vector<int>& nums) {
+        int n = nums.size();
+        int ans = nums[0];
+        sort(nums.begin()+1,nums.end());
+        return ans + nums[1] + nums[2];
+    }
+};
